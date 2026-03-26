@@ -1,5 +1,8 @@
 module.exports = {
-  content: ['index.html'],
+  content: [
+  './index.html',
+  './src/**/*.{js,ts,jsx,tsx,html}',
+  ],
   darkMode: 'class',
   theme: {
     container: {
@@ -8,12 +11,29 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: '#8b5cf6',
+        primary: {
+          DEFAULT: '#5A4FC0',
+          light: '#7C73D6',
+          dark: '#3E35A3',
+        },
         secondary: '#1e293b',
         dark: '#0f172a',
       },
       screens: {
         '2xl': '1320px',
+      },
+      fontFamily: {
+        sans: [
+          // 'Inter',
+          // 'sans-serif',
+          '-apple-system',
+          'BlinkMacSystemFont',
+          'San Francisco',
+          'Helvetica Neue',
+          'Segoe UI',
+          'Roboto',
+          'sans-serif'
+        ],
       },
     },
   },
